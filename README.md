@@ -12,7 +12,7 @@ Run `ng generate component component-name` to generate a new component. You can 
 
 ## Build
 
-Run `ng build` to build the project. The build artifacts will be stored in the `docs/` directory. The other command is `ng build --output-path docs --base-href my-website`. But this is taken care of, so you only need to run `ng build` because the outputPath option is changed to docs in the `angular.json`, and the `index.html` has the `<base href="my-website">` tag at the top.
+Run `ng build` to build the project. The build artifacts will be stored in the `docs/` directory. The other command that does the same thing is `ng build --output-path docs --base-href my-website`. But this is taken care of, so you only need to run `ng build` because the outputPath option is changed to docs in the `angular.json`, and the `index.html` has the `<base href="my-website">` tag at the top.
 
 ## Running unit tests
 
