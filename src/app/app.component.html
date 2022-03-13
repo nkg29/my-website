@@ -59,6 +59,7 @@
 <mat-progress-spinner class='custom-spinner' [mode]="'indeterminate'" *ngIf="loading$ | async"></mat-progress-spinner>
 <button mat-raised-button (click)="loader.show()">Show loader</button>
 <button mat-raised-button (click)="loader.hide()">Hide loader</button>
+<button mat-raised-button (click)="fetchUser()">Call API</button>
 
   <!-- Resources -->
   <h2>Resources</h2>
@@ -74,6 +75,12 @@
     </a>
     <a class="card" target="_blank" rel="noopener" href={{useGoogle}}>
       <span>How to import Google fonts into your css sheet</span>
+    </a>
+    <a class="card" target="_blank" rel="noopener" href={{loadingBar}}>
+      <span style="font-family:Jost">Creating the Loading bar</span>
+    </a>
+    <a class="card" target="_blank" rel="noopener" href={{changeSpinnerColor}}>
+      <span style="font-family:Alegreya">Change spinner color</span>
     </a>
     <a class="card" target="_blank" rel="noopener" href="https://angular.io/tutorial">
       <svg class="material-icons" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M5 13.18v4L12 21l7-3.82v-4L12 17l-7-3.82zM12 3L1 9l11 6 9-4.91V17h2V9L12 3z"/></svg>
