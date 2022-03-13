@@ -10,10 +10,12 @@ import { MatToolbarModule } from '@angular/material/toolbar';
 import { MatProgressSpinnerModule } from '@angular/material/progress-spinner';
 import { MatButtonModule } from '@angular/material/button';
 import { NetworkInterceptor } from './services/network.interceptor';
+import { ScreenLoadComponent } from './components/screen-load.component';
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    ScreenLoadComponent
   ],
   imports: [
     BrowserModule,
