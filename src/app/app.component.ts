@@ -14,7 +14,7 @@ export class AppComponent implements OnInit {
 
   loading$ = this.loader.loading$;
 
-  constructor(private loader: loadingService) {
+  constructor(public loader: loadingService) {
 
   }
 
