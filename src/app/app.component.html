@@ -7,7 +7,7 @@
 <!-- * * * * * * * to get started with your project! * * * * * * * * -->
 <!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * -->
 
-<mat-progress-spinner class='custom-spinner' [mode]="'indeterminate'"></mat-progress-spinner>
+<mat-progress-spinner class='custom-spinner' [mode]="'indeterminate'" *ngIf="loading$ | async"></mat-progress-spinner>
 <!-- Toolbar -->
 <div class="toolbar" role="banner">
   <img
