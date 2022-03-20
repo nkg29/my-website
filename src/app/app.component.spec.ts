@@ -1,4 +1,7 @@
 import { TestBed } from '@angular/core/testing';
+import { HttpClientTestingModule, HttpTestingController } from '@angular/common/http/testing';
+import { HttpClientModule } from '@angular/common/http';
+
 import { AppComponent } from './app.component';
 
 describe('AppComponent', () => {
@@ -7,6 +10,7 @@ describe('AppComponent', () => {
       declarations: [
         AppComponent
       ],
+      imports: [HttpClientTestingModule]
     }).compileComponents();
   });
 

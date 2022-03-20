@@ -7,6 +7,7 @@ import { HttpClient } from '@angular/common/http';
   templateUrl: './app.component.html',
   styleUrls: ['./app.component.css']
 })
+
 export class AppComponent implements OnInit {
   title = 'my-website';
   howTo = 'https://www.youtube.com/watch?v=LEFzPe9LTzQ';

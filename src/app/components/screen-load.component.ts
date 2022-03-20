@@ -5,6 +5,7 @@ import { Component } from '@angular/core';
   templateUrl: './screen-load.component.html',
   styleUrls: ['./screen-load.component.css']
 })
+
 export class ScreenLoadComponent { 
   
 }
