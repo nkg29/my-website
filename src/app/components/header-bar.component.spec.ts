@@ -6,6 +6,8 @@ import * as $ from 'jquery';
 
 import { HeaderBarComponent } from './header-bar.component';
 
+// credit to: https://stackoverflow.com/questions/1740700/how-to-get-hex-color-value-rather-than-rgb-value for providing this clean
+// one-line function to convert rgb to hex
 const rgb2hex = (rgb : string) => `#${rgb.match(/^rgb\((\d+),\s*(\d+),\s*(\d+)\)$/)?.slice(1).map(n => parseInt(n, 10).toString(16).padStart(2, '0')).join('')}`
 
 describe('HeaderBarComponent', () => {
@@ -24,14 +26,16 @@ describe('HeaderBarComponent', () => {
     expect(app).toBeTruthy();
   });
 
-  it('should have the home link (nkg29)', () => {
+  it('should have the text (nkg29)', () => {
     const fixture = TestBed.createComponent(HeaderBarComponent);
     const app = fixture.componentInstance;
     const compiled = fixture.nativeElement as HTMLElement;
     expect(compiled.querySelector('a')?.textContent).toEqual('nkg29');
   });
 
-  it('should have home link (nkg29) with medium orchid color', () => {
+  // credit to: https://stackoverflow.com/questions/57990961/how-to-test-style-background-color-attribute for helping me figure
+  // out how to test css attributes
+  it('should have home link (nkg29) with custom color', () => {
     const fixture = TestBed.createComponent(HeaderBarComponent);
     const customColor = '#ba55d3';
     fixture.detectChanges();
@@ -40,4 +44,9 @@ describe('HeaderBarComponent', () => {
     const hexColor = rgb2hex($('#home').css('color'))
     expect(hexColor).toBe(customColor);
   });
+
+  it('should redirect to the same page when clicking on the home link (nkg29)', () => {
+    const fixture = testBed.createComponent(HeaderBarComponent);
+    
+  })
 });
