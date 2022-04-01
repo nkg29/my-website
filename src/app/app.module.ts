@@ -12,12 +12,16 @@ import { MatButtonModule } from '@angular/material/button';
 import { NetworkInterceptor } from './services/network.interceptor';
 import { ScreenLoadComponent } from './components/screen-load.component';
 import { HeaderBarComponent } from './components/header-bar.component';
+import { NoPageFoundComponent } from './components/no-page-found.component';
+
+import { AppRoutingModule } from './app-routing.module';
 
 @NgModule({
   declarations: [
     AppComponent,
     ScreenLoadComponent,
-    HeaderBarComponent
+    HeaderBarComponent,
+    NoPageFoundComponent
   ],
   imports: [
     BrowserModule,
@@ -25,7 +29,8 @@ import { HeaderBarComponent } from './components/header-bar.component';
     BrowserAnimationsModule,
     MatToolbarModule,
     MatButtonModule,
-    MatProgressSpinnerModule
+    MatProgressSpinnerModule,
+    AppRoutingModule
   ],
   providers: [ LoadingService, 
   {
