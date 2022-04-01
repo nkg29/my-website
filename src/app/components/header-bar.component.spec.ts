@@ -45,8 +45,11 @@ describe('HeaderBarComponent', () => {
     expect(hexColor).toBe(customColor);
   });
 
+  const leftMouseButton = 0;
   it('should redirect to the same page when clicking on the home link (nkg29)', () => {
-    const fixture = testBed.createComponent(HeaderBarComponent);
+    const fixture = TestBed.createComponent(HeaderBarComponent);
+    const link = fixture.debugElement.query(By.css('#home'));
+    link.triggerEventHandler('click', { button: leftMouseButton });
     
-  })
+;  })
 });
