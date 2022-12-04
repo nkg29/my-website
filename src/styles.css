@@ -1,7 +1,7 @@
-@import url('https://fonts.googleapis.com/css?family=Meddon|Dosis|Quicksand|Rochester|Jost:wght@300|Alegreya');
+@import url('https://fonts.googleapis.com/css?family=Meddon|Dosis|Quicksand|Rochester|Jost:wght@300|Alegreya|Laila');
 
 footer {
 	font-family:  'Meddon', serif;
 }
 html, body { height: 100%; }
-body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
+body { margin: 0; font-family: "Laila", Roboto, "Helvetica Neue", sans-serif; }
